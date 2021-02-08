@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-background-color;
+
+  &-set {
+    display: flex;
+  }
+
+  &-blocks {
+    display: flex;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,95 @@
+.header-portfolio {
+  border-bottom: 1px solid;
+  color: #ececec;
+}
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-photos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+  }
+
+  &-list {
+    margin-left: 30px;
+    margin-right: 0px;
+    transition-property: filter;
+  }
+  &-link {
+    transition-property: filter;
+    transition: filter $animation-duration $transition-timing-function;
+  }
+
+  &-link:focus,
+  &-list:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  &-photos > &-list:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+
+  &-photos > &-list:nth-child(n + 4) {
+    margin-top: 30px;
+  }
+
+  &-set {
+    width: 370px;
+    background-color: $white-color;
+    margin: 0px;
+    padding: 20px 0px 20px 24px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    box-sizing: border-box;
+  }
+
+  &-title {
+    margin: 0px 0px 2px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &-text {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $main-text-color;
+  }
+
+  &-info {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition-property: transform;
+    transition: transform $animation-duration $transition-timing-function;
+    transform: translateY(100%);
+  }
+
+  &-list:hover &-overlay,
+  &-link:focus &-overlay {
+    transform: translateY(0);
+  }
+
+  &-overlay > p {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.55;
+    color: $white-color;
+    padding: 63px 24px;
+    margin: 0;
+  }
+}

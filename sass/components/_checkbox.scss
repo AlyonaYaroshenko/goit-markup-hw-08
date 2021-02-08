@@ -1,0 +1,39 @@
+.policy-line {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0px;
+}
+.policy-label {
+  display: flex;
+  justify-content: center;
+}
+
+.policy-link {
+  color: $accent-color;
+  border-bottom: 1px solid $accent-color;
+}
+
+.old-checkbox {
+  margin-right: 9px;
+
+  &:checked ~ .checkbox {
+    background-image: url("../images/icon-check.svg");
+    background-size: contain;
+    fill: $white-color;
+    background-color: $accent-color;
+    background-origin: border-box;
+    border-color: $accent-color;
+  }
+}
+
+.checkbox {
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-color;
+  border-radius: 3px;
+  margin-right: 9px;
+  transition-property: fill, background-color, border-color;
+  transition: fill $animation-duration $transition-timing-function,
+    background-color $animation-duration $transition-timing-function,
+    border-color $animation-duration $transition-timing-function;
+}
