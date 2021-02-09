@@ -1,16 +1,40 @@
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    margin: 32px 84px 32px 0px;
+    padding: 0px;
+    border: 0px;
+
+    // .nav {
+    //   display: flex;
+    //   padding: 0px;
+    // }
+  }
+
+  & > .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .adress-container {
   display: none;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 32px 0px 32px 0px;
+    flex-direction: column;
+    margin: 21px 15px 21px 0px;
     padding: 0px;
 
     .adress {
       display: flex;
-      align-items: center;
+      padding: 0px;
 
       &:hover,
       &:focus {
@@ -21,5 +45,20 @@
     .adress.difference {
       color: $main-text-color;
     }
+
+    .adress-container > .adress:not(:last-child) {
+      margin-bottom: 10px;
+      padding: 0px;
+    }
   }
+}
+
+.nav-link,
+.adress {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-color;
+  transition-property: color;
+  transition: color $animation-duration $transition-timing-function;
 }

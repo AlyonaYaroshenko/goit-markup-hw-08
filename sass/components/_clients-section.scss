@@ -12,6 +12,12 @@
   &-list > &-item:not(:last-child) {
     margin-right: 30px;
   }
+
+  &-item > .logo-link:hover,
+  &-item > .logo-link:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
 }
 
 .logo-link {
@@ -33,10 +39,4 @@
 
 .logos {
   fill: currentColor;
-}
-
-&-item > .logo-link:hover,
-&-item > .logo-link:focus {
-  border-color: $accent-color;
-  color: $accent-color;
 }
