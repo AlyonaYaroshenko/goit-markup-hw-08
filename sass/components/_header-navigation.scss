@@ -7,13 +7,19 @@
     align-items: center;
     margin: 32px 0px 32px 0px;
     padding: 0px;
-  }
 
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 32px 0px 32px 0px;
-    padding: 0px;
+    .adress {
+      display: flex;
+      align-items: center;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    .adress.difference {
+      color: $main-text-color;
+    }
   }
 }
