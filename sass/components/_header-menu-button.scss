@@ -1,0 +1,17 @@
+.header-menu {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
+}

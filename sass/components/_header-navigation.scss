@@ -3,23 +3,62 @@
   align-items: center;
 }
 
-.site-nav {
+.header-nav {
+  display: flex;
+}
+
+.header-site-nav {
   display: none;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    margin: 32px 84px 32px 0px;
-    padding: 0px;
-    border: 0px;
+    justify-content: center;
+    margin: 32px 0px;
+  }
+}
 
-    // .nav {
-    //   display: flex;
-    //   padding: 0px;
-    // }
+.header-site-nav > .header-item:not(:last-child) {
+  @media screen and (min-width: $tablet-width) {
+  }
+  margin-right: 50px;
+}
+
+.header-nav-link {
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-color;
+    transition-property: color;
+    transition: color $animation-duration $transition-timing-function;
   }
 
-  & > .item:not(:last-child) {
-    margin-right: 50px;
+  &:hover,
+  &:focus {
+    @media screen and (min-width: $tablet-width) {
+      color: $accent-color;
+    }
+  }
+
+  &.current {
+    @media screen and (min-width: $tablet-width) {
+      color: $accent-color;
+    }
+  }
+
+  &.current::after {
+    @media screen and (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      padding: 0;
+      margin-top: 28.5px;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
 }
 
@@ -29,36 +68,88 @@
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    margin: 21px 15px 21px 0px;
+    margin: 21px 0px 21px 84px;
     padding: 0px;
-
-    .adress {
-      display: flex;
-      padding: 0px;
-
-      &:hover,
-      &:focus {
-        color: $accent-color;
-      }
-    }
-
-    .adress.difference {
-      color: $main-text-color;
-    }
-
-    .adress-container > .adress:not(:last-child) {
-      margin-bottom: 10px;
-      padding: 0px;
-    }
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 0px 32px 305px;
+    padding: 0px;
   }
 }
 
-.nav-link,
+.icon-envelope,
+.icon-smartphone {
+  @media screen and (min-width: $tablet-width) {
+    margin: 0px 8px 0px 0px;
+    fill: currentColor;
+  }
+  @media screen and (min-width: $desktop-width) {
+    margin: 0px 10px 0px 0px;
+  }
+}
+
+.icon-envelope-desktop {
+  @media screen and (min-width: $desktop-width) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-smartphone-desktop {
+  @media screen and (min-width: $desktop-width) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .adress {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $title-color;
-  transition-property: color;
-  transition: color $animation-duration $transition-timing-function;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    transition-property: color;
+    transition: color $animation-duration $transition-timing-function;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+.adress:hover,
+.adress:focus {
+  @media screen and (min-width: $tablet-width) {
+    color: $accent-color;
+  }
+}
+
+.adress.difference {
+  @media screen and (min-width: $tablet-width) {
+    color: $main-text-color;
+  }
+}
+
+.adress-container > .adress:not(:last-child) {
+  @media screen and (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+}
+
+.adress-container > .adress:not(:last-child) {
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
 }
