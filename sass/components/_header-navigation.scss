@@ -41,6 +41,13 @@
     }
   }
 
+  &:hover,
+  &:focus {
+    @media screen and (min-width: $desktop-width) {
+      color: $accent-color;
+    }
+  }
+
   &.current {
     @media screen and (min-width: $tablet-width) {
       color: $accent-color;
@@ -126,9 +133,16 @@
   }
 }
 
-.adress:hover,
-.adress:focus {
+.adress.difference:hover,
+.adress.difference:focus {
   @media screen and (min-width: $tablet-width) {
+    color: $accent-color;
+  }
+}
+
+.adress.difference:hover,
+.adress.difference:focus {
+  @media screen and (min-width: $desktop-width) {
     color: $accent-color;
   }
 }

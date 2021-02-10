@@ -8,6 +8,15 @@
   margin-bottom: 10px;
   padding: 0px;
 
+  &-icon {
+    fill: currentColor;
+  }
+
+  &-icon:hover,
+  &-icon:focus {
+    color: $accent-color;
+  }
+
   @media screen and (min-width: $tablet-width) {
     display: none;
   }

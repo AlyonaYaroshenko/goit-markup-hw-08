@@ -129,12 +129,12 @@ textarea::placeholder .form-field {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-hidden .backdrop {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.modal .is-hidden .backdrop {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
@@ -185,6 +185,14 @@ textarea::placeholder .form-field {
 
 .old-checkbox {
   margin-right: 9px;
+}
+
+.old-checkbox.visually-hidden {
+  position: absolute;
+  clip: rect 0 0 0 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .old-checkbox:checked ~ .checkbox {
@@ -535,6 +543,14 @@ textarea::placeholder .form-field {
   padding: 0px;
 }
 
+.header-menu-icon {
+  fill: currentColor;
+}
+
+.header-menu-icon:hover, .header-menu-icon:focus {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   .header-menu {
     display: none;
@@ -585,6 +601,12 @@ textarea::placeholder .form-field {
 }
 
 @media screen and (min-width: 768px) {
+  .header-nav-link:hover, .header-nav-link:focus {
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .header-nav-link:hover, .header-nav-link:focus {
     color: #2196f3;
   }
@@ -687,8 +709,15 @@ textarea::placeholder .form-field {
 }
 
 @media screen and (min-width: 768px) {
-  .adress:hover,
-  .adress:focus {
+  .adress.difference:hover,
+  .adress.difference:focus {
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress.difference:hover,
+  .adress.difference:focus {
     color: #2196f3;
   }
 }
