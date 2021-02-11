@@ -1,27 +1,60 @@
 .advantages {
-  padding: 94px 0px 94px;
-
-  &-section {
-    display: inline-block;
-    display: flex;
-    padding: 0px;
-  }
+  padding: 60px 0px 60px;
 
   &-section > &-item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 
-  &-icons {
-    display: inline-block;
-    width: 270px;
+  &-section {
+    padding: 0px;
+    // width: 450px;
+    @media screen and (min-width: $tablet-width) {
+      // width: 738px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .advantages-section > .advantages-item:nth-child(2n + 1) {
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
+  }
+
+  .advantages-section > .advantages-item:nth-child(-n + 1) {
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .advantages-item {
+    @media screen and (min-width: $tablet-width) {
+      width: 354px;
+    }
+  }
+
+  .advantages-icons {
+    // display: inline-block;
+    width: 450px;
     height: 120px;
     background-color: $button-background;
     margin-bottom: 30px;
-    padding: 25px 100px;
+    padding: 25px 190px;
     border-radius: 4px;
+    @media screen and (min-width: $tablet-width) {
+      width: 354px;
+      padding: auto;
+      margin-right: 0px;
+    }
   }
 
-  &-title {
+  // .advantages-section > .advantages-item:not(:last-child) {
+  //   @media screen and (min-width: $tablet-width) {
+  //     margin-right: 30px;
+  //   }
+  // }
+
+  .advantages-title {
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
@@ -29,25 +62,28 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: $tablet-width) {
+      text-align: left;
+    }
   }
 
-  &-text {
+  .advantages-text {
     padding: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.72;
     color: $main-text-color;
+    @media screen and (min-width: $tablet-width) {
+      display: inline-block;
+    }
   }
+}
 
-  // &-section-item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-
-  .visually-hidden {
-    position: absolute;
-    clip: rect (0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
+.visually-hidden {
+  position: absolute;
+  clip: rect (0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
