@@ -1,8 +1,8 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: $hero-background;
@@ -11,40 +11,56 @@
   background-repeat: no-repeat;
   background-position: cover;
 
-  &-title {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    margin-left: 250px;
-    margin-right: 250px;
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+  }
+}
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-weight: 900;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0px 204px 30px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    margin: 0px 250px 30px;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $white-color;
   }
+}
 
-  &-button {
-    display: inline-block;
-    display: flex;
-    padding: 10px 32px;
-    border: none;
-    border-radius: 4px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    font: inherit;
-    cursor: pointer;
+.hero-button {
+  display: inline-block;
+  display: flex;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  // margin-bottom: 118px;
+  font: inherit;
+  cursor: pointer;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $white-color;
-    background-color: $accent-color;
-  }
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  background-color: $accent-color;
 }
