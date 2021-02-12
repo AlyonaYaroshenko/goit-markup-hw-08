@@ -29,7 +29,7 @@
 
   .advantages-item {
     @media screen and (min-width: $tablet-width) {
-      width: 354px;
+      // width: 354px;
     }
   }
 
@@ -43,7 +43,7 @@
     border-radius: 4px;
     @media screen and (min-width: $tablet-width) {
       width: 354px;
-      padding: auto;
+      padding: 25px 142px;
       margin-right: 0px;
     }
   }
