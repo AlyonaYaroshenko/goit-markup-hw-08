@@ -4,80 +4,101 @@
   &-section > &-item:not(:last-child) {
     margin-bottom: 30px;
   }
-
-  &-section {
+  &-section > &-item:not(:last-child) {
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0px 94px;
+  }
+}
+.advantages-section {
+  padding: 0px;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: inline-block;
+    display: flex;
     padding: 0px;
-    // width: 450px;
-    @media screen and (min-width: $tablet-width) {
-      // width: 738px;
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
+}
 
-  .advantages-section > .advantages-item:nth-child(2n + 1) {
-    @media screen and (min-width: $tablet-width) {
-      margin-right: 30px;
-    }
+.advantages-section > .advantages-item:nth-child(2n + 1) {
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 30px;
   }
-
-  .advantages-section > .advantages-item:nth-child(-n + 1) {
-    @media screen and (min-width: $tablet-width) {
-      margin-bottom: 30px;
-    }
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 0px;
   }
+}
 
-  .advantages-item {
-    @media screen and (min-width: $tablet-width) {
-      // width: 354px;
-    }
-  }
-
-  .advantages-icons {
-    // display: inline-block;
-    width: 450px;
-    height: 120px;
-    background-color: $button-background;
+.advantages-section > .advantages-item:nth-child(-n + 2) {
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 30px;
-    padding: 25px 190px;
-    border-radius: 4px;
-    @media screen and (min-width: $tablet-width) {
-      width: 354px;
-      padding: 25px 142px;
-      margin-right: 0px;
-    }
   }
-
-  // .advantages-section > .advantages-item:not(:last-child) {
-  //   @media screen and (min-width: $tablet-width) {
-  //     margin-right: 30px;
-  //   }
-  // }
-
-  .advantages-title {
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    text-align: center;
-    @media screen and (min-width: $tablet-width) {
-      text-align: left;
-    }
-  }
-
-  .advantages-text {
-    padding: 0px;
-    margin-top: 0px;
+  @media screen and (min-width: $tablet-width) {
     margin-bottom: 0px;
-    line-height: 1.72;
-    color: $main-text-color;
-    @media screen and (min-width: $tablet-width) {
-      display: inline-block;
-    }
   }
+}
+
+.advantages-section > .advantages-item:not(:last-child) {
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}
+
+.advantages-item {
+  @media screen and (min-width: $tablet-width) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 270px;
+  }
+}
+
+.advantages-icons {
+  // display: inline-block;
+  width: 450px;
+  height: 120px;
+  background-color: $button-background;
+  margin-bottom: 30px;
+  padding: 25px 190px;
+  border-radius: 4px;
+  @media screen and (min-width: $tablet-width) {
+    width: 354px;
+    padding: 25px 142px;
+    margin-right: 0px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: inline-block;
+    width: 270px;
+    padding: 25px 100px;
+  }
+}
+
+.advantages-title {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.advantages-text {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.72;
+  color: $main-text-color;
 }
 
 .visually-hidden {
