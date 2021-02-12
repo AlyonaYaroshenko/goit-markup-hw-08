@@ -15,51 +15,51 @@
       margin: 0px 0px 50px;
     }
   }
+}
+.clients-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -60px;
+  margin-right: -60px;
+}
 
-  .clients-section-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -60px;
-    margin-right: -60px;
+.clients-section-item {
+  display: block;
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 210px;
+  width: calc(100% / 2 - 30px);
 
-    @media screen and (win-width: $desktop-width) {
-      display: flex;
-    }
-  }
-
-  .clients-section-item {
+  @media screen and (min-width: $tablet-width) {
     margin-top: 30px;
     margin-right: 30px;
-    width: 210px;
-    width: calc(100% / 2 - 30px);
-
-    // @media screen and (win-width: $tablet-width) {
-    //   margin-top: 30px;
-    //   margin-right: 30px;
-    //   width: 226px;
-    //   width: calc(100% / 3 - 30px);
-    // }
+    padding: 0px;
+    width: 226px;
+    width: calc(100% / 3 - 30px);
   }
-  // &-list > &-item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-
-  &-item > .logo-link:hover,
-  &-item > .logo-link:focus {
-    border-color: $accent-color;
-    color: $accent-color;
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    width: 170px;
   }
+}
+// &-list > &-item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.clients-section-item > .logo-link:hover,
+.clients-section-item > .logo-link:focus {
+  border-color: $accent-color;
+  color: $accent-color;
 }
 
 .logo-link {
-  display: block;
+  // display: block;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 210px;
   height: 90px;
   border: 1px solid $social-media;
-  /* box-sizing: border-box; */
   border-radius: 4px;
   background-color: $white-color;
   color: $social-media;
@@ -67,10 +67,10 @@
   transition: color $animation-duration $transition-timing-function,
     border-color $animation-duration $transition-timing-function;
 
-  @media screen and (win-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 226px;
   }
-  @media screen and (win-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 170px;
   }
 }
