@@ -1,0 +1,31 @@
+.input-field {
+  position: relative;
+}
+
+.input-field-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $title-color;
+  transition-property: fill;
+  transition: fill $animation-duration $transition-timing-function;
+}
+
+.form-field-input {
+  transition-property: border-color, outline;
+  transition: border-color $animation-duration $transition-timing-function,
+    outline $animation-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+    cursor: pointer;
+  }
+
+  &:hover + .input-field-icon,
+  &:focus + .input-field-icon {
+    fill: $accent-color;
+  }
+}

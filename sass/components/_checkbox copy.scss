@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
 }
+
 .policy-text {
   line-height: 1.16;
   color: $main-text-color;
@@ -19,6 +20,10 @@
 .policy-link {
   color: $accent-color;
   border-bottom: 1px solid $accent-color;
+  line-height: 1.16;
+  @media screen and (min-width: $tablet-width) {
+    line-height: 1.71;
+  }
 }
 
 .old-checkbox {
