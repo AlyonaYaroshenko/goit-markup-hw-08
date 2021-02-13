@@ -77,30 +77,37 @@
 
 .form-field-footer {
   @media screen and (min-width: $desktop-width) {
-    display: flex;
+    margin-left: 93px;
   }
 }
 
 .subscribe {
-  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: $white-color;
   padding: 0px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (min-width: $desktop-width) {
     display: flex;
+    // margin-left: 93px;
+    // margin-bottom: 20px;
+    padding: 0px;
   }
 }
 
 .form-button-footer {
-  align-items: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (min-width: $desktop-width) {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     padding: 0px;
-    margin-left: 93px;
+    // margin-left: 93px;
   }
 }
 
@@ -121,7 +128,9 @@
   padding-left: 16px;
   @media screen and (min-width: $desktop-width) {
     display: flex;
-    width: 360px;
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
   }
 }
 

@@ -538,12 +538,11 @@ textarea::placeholder .form-field {
 
 @media screen and (min-width: 1200px) {
   .form-field-footer {
-    display: flex;
+    margin-left: 93px;
   }
 }
 
 .subscribe {
-  text-align: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -552,22 +551,29 @@ textarea::placeholder .form-field {
   padding: 0px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscribe {
-    display: flex;
+    text-align: center;
   }
 }
 
-.form-button-footer {
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .form-button-footer {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .form-button-footer {
     display: flex;
-    justify-content: flex-end;
     padding: 0px;
-    margin-left: 93px;
   }
 }
 
@@ -591,7 +597,9 @@ textarea::placeholder .form-field {
 @media screen and (min-width: 1200px) {
   .form-button-footer input {
     display: flex;
-    width: 360px;
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
   }
 }
 
@@ -655,8 +663,13 @@ textarea::placeholder .form-field {
 
 .footer-list {
   padding: 0px;
-  text-align: center;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-list {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
