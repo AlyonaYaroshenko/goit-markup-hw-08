@@ -33,9 +33,35 @@
   position: absolute;
   top: 0%;
   left: 0%;
-  right: 0%;
-  bottom: 0%;
-  width: 450px;
-  height: 609px;
+  width: 100%;
+  height: 796px;
+  background-color: #000000;
+}
+
+.menu-modal-close {
+  fill: currentColor;
+  transition-property: color;
+  transition: color $animation-duration $transition-timing-function;
+}
+
+.menu-modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  border: none;
   background-color: $white-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
