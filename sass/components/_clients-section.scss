@@ -1,7 +1,7 @@
 .clients-section {
   padding: 60px 0px;
 
-  @media screen and (win-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     padding: 94px 0px;
   }
 
@@ -11,8 +11,8 @@
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
-    @media screen and (win-width: $desktop-width) {
-      margin: 0px 0px 50px;
+    @media screen and (min-width: $desktop-width) {
+      margin: 0px 0px 90px;
     }
   }
 }

@@ -303,7 +303,7 @@ textarea::placeholder .form-field {
   padding: 60px 0px;
 }
 
-@media screen and (win-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients-section {
     padding: 94px 0px;
   }
@@ -317,9 +317,9 @@ textarea::placeholder .form-field {
   text-align: center;
 }
 
-@media screen and (win-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients-section-title {
-    margin: 0px 0px 50px;
+    margin: 0px 0px 90px;
   }
 }
 
