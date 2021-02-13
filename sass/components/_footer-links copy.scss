@@ -1,29 +1,11 @@
-.footer-blocks {
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 76px;
-    margin-right: 89px;
-  }
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-
 .footer-join {
-  margin-bottom: 60px;
-  text-align: center;
-  @media screen and (min-width: $desktop-width) {
-    display: inline-block;
-    margin: 0px 0px 0px 67px;
-  }
+  display: inline-block;
+  margin: 0px 0px 0px 67px;
 }
 
 .join {
-  text-align: center;
+  display: inline-block;
+  display: flex;
   font-family: inherit;
   font-weight: 700;
   line-height: 16px;
@@ -31,20 +13,11 @@
   margin: 12px 0px 20px 0px;
   padding: 0px;
   color: $white-color;
-  @media screen and (min-width: $desktop-width) {
-    display: block;
-    display: flex;
-    text-align: left;
-  }
 }
 
 .footer-links-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
-  @media screen and (min-width: $desktop-width) {
-    margin-bottom: 0px;
-  }
 }
 
 .footer-links-list > .footer-items:not(:last-child) {
@@ -75,41 +48,27 @@
   background-color: $accent-color;
 }
 
-.form-field-footer {
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
 .subscribe {
-  text-align: center;
+  /* display: inline-block;
+  display: flex; */
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: $white-color;
+  margin: 12px 0px 20px 93px;
   padding: 0px;
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-  }
 }
 
 .form-button-footer {
-  align-items: center;
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0px;
-    margin-left: 93px;
-  }
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin-left: 93px;
 }
 
 .form-button-footer input {
-  display: block;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
+  width: 360px;
   height: 50px;
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -119,10 +78,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-    width: 360px;
-  }
 }
 
 .form-button-footer input::placeholder {
@@ -131,25 +86,26 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  /* padding-left: 16px; */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .submit-button-footer {
+  margin-left: 12px;
   padding: 10px 28px 10px 29px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
   background-color: $accent-color;
-  margin-left: auto;
-  margin-right: auto;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: $white-color;
   cursor: pointer;
-  display: block;
+  display: flex;
   align-items: center;
   text-align: center;
 }

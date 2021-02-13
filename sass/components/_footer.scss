@@ -4,11 +4,15 @@
   background-color: $footer-background-color;
 
   &-set {
-    display: flex;
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+    }
   }
 
   &-blocks {
-    display: flex;
-    align-items: flex-start;
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+      align-items: flex-start;
+    }
   }
 }
