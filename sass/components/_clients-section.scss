@@ -6,21 +6,21 @@
   }
 
   &-title {
-    margin: 0px 0px 60px;
+    margin: 0px 0px 30px;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
     @media screen and (min-width: $desktop-width) {
-      margin: 0px 0px 90px;
+      margin: 0px 0px 50px;
     }
   }
 }
 .clients-section-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -60px;
-  margin-right: -60px;
+  margin-top: -30px;
+  margin-right: -30px;
 }
 
 .clients-section-item {
@@ -28,14 +28,10 @@
   margin-top: 30px;
   margin-right: 30px;
   padding: 0px;
-  width: 210px;
   width: calc(100% / 2 - 30px);
 
   @media screen and (min-width: $tablet-width) {
-    margin-top: 30px;
-    margin-right: 30px;
     padding: 0px;
-    width: 226px;
     width: calc(100% / 3 - 30px);
   }
   @media screen and (min-width: $desktop-width) {

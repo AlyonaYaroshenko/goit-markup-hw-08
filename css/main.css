@@ -310,7 +310,7 @@ textarea::placeholder .form-field {
 }
 
 .clients-section-title {
-  margin: 0px 0px 60px;
+  margin: 0px 0px 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -319,31 +319,27 @@ textarea::placeholder .form-field {
 
 @media screen and (min-width: 1200px) {
   .clients-section-title {
-    margin: 0px 0px 90px;
+    margin: 0px 0px 50px;
   }
 }
 
 .clients-section-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -60px;
-  margin-right: -60px;
+  margin-top: -30px;
+  margin-right: -30px;
 }
 
 .clients-section-item {
   margin-top: 30px;
   margin-right: 30px;
   padding: 0px;
-  width: 210px;
   width: calc(100% / 2 - 30px);
 }
 
 @media screen and (min-width: 768px) {
   .clients-section-item {
-    margin-top: 30px;
-    margin-right: 30px;
     padding: 0px;
-    width: 226px;
     width: calc(100% / 3 - 30px);
   }
 }
@@ -1043,6 +1039,7 @@ textarea::placeholder .form-field {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
