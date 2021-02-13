@@ -821,6 +821,26 @@ textarea::placeholder .form-field {
   }
 }
 
+.menu-modal.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-modal {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 450px;
+  height: 609px;
+  background-color: #ffffff;
+}
+
+.header {
+  position: relative;
+}
+
 .header > .container {
   display: flex;
   align-items: center;

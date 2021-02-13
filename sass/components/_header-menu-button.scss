@@ -16,11 +16,26 @@
   &-icon:focus {
     color: $accent-color;
   }
-
   @media screen and (min-width: $tablet-width) {
     display: none;
   }
   @media screen and (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.menu-modal.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-modal {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 450px;
+  height: 609px;
+  background-color: $white-color;
 }

@@ -33,14 +33,21 @@
             </svg>+38 096 111 11 11</a></li>
         </ul>
 
-       <button class="header-menu">
-         <svg class="header-menu-icon" width="40" height="40">
-          <use href="./images/icons.svg#icon-menu"></use>
-          <use href="./images/icons.svg#icon-close-menu"></use>
+       <button type="button" class="header-menu" data-toggle-backdrop-schedule>
+         <svg class="header-menu-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="header-menu-menu" href="./images/icons.svg#icon-menu"></use>
          </svg>
        </button>
-
+      <div class="menu-modal backdrop--hidden" data-backdrop-schedule>
+        <button type="button" class="menu-modal-button" data-toggle-backdrop-schedule><svg class="menu-modal-close" width="11"
+            height="11">
+            <use href="./images/icons.svg#icon-close-menu"></use>
+          </svg></button>
+      </div>
         </div>
+
+
+
    </header> 
    <!-- Hero -->
    <main>
@@ -330,6 +337,24 @@
     </form>
   </div>
 </div>
+
+
+
+
+
 <script src="./js/modal.js"></script>
+<script>
+  const setup = name => {
+    const backdrop = document.querySelector(`[data-backdrop-${name}]`);
+    const buttons = document.querySelectorAll(`[data-toggle-backdrop-${name}]`);
+    const toggleBackdrop = () =>
+      backdrop.classList.toggle('backdrop--hidden');
+    buttons.forEach(button =>
+      button.addEventListener('click', toggleBackdrop),
+    );
+  }
+  setup('schedule')
+  setup('menu')
+</script>
 </body>
 </html>
