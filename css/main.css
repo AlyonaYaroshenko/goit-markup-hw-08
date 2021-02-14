@@ -269,11 +269,15 @@ textarea::placeholder .form-field {
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .policy-label {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .policy-text {
