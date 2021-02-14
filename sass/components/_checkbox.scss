@@ -8,10 +8,12 @@
   justify-content: center;
 }
 .policy-text {
+  font-size: 12px;
   line-height: 1.16;
   color: $main-text-color;
 
   @media screen and (min-width: $tablet-width) {
+    font-size: 14px;
     line-height: 1.71;
   }
 }
