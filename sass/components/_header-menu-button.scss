@@ -35,10 +35,13 @@
   left: 0%;
   width: 100%;
   height: 796px;
-  background-color: #000000;
+  padding: 40px 48px;
+  background-color: $white-color;
 }
 
 .menu-modal-close {
+  width: 19px;
+  height: 19px;
   fill: currentColor;
   transition-property: color;
   transition: color $animation-duration $transition-timing-function;
@@ -64,4 +67,18 @@
   &:focus {
     color: $accent-color;
   }
+}
+
+.header-menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.header-menu-link.current {
+  color: $accent-color;
 }
