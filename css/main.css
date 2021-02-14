@@ -415,6 +415,10 @@ textarea::placeholder .form-field {
   fill: currentColor;
 }
 
+.features {
+  padding-bottom: 94px;
+}
+
 @media screen and (max-width: 1199px) {
   .features {
     display: none;
@@ -1234,9 +1238,14 @@ textarea::placeholder .form-field {
   margin-right: 8px;
 }
 
+.buttons > .item:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1450,6 +1459,13 @@ textarea::placeholder .form-field {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -1461,6 +1477,7 @@ textarea::placeholder .form-field {
 
 @media screen and (min-width: 1200px) {
   .team-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }

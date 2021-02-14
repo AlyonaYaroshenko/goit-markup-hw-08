@@ -2,6 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $button-background;
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &-title {
     margin-top: 0px;
@@ -11,6 +15,7 @@
     font-size: 28px;
     line-height: 1.18;
     @media screen and (min-width: $desktop-width) {
+      margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.16;
     }
