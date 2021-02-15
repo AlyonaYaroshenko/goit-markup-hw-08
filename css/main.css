@@ -741,7 +741,7 @@ textarea::placeholder .form-field {
 }
 
 .logo {
-  margin: 16px 276px 16px 0px;
+  margin: 16px 0px 16px 0px;
   border: 0px;
 }
 
@@ -1118,10 +1118,9 @@ textarea::placeholder .form-field {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: auto;
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero@2x.jpg");
     background-repeat: no-repeat;
@@ -1130,7 +1129,7 @@ textarea::placeholder .form-field {
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
     background-repeat: no-repeat;
@@ -1139,7 +1138,7 @@ textarea::placeholder .form-field {
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet@2x.jpg");
     background-repeat: no-repeat;
@@ -1148,7 +1147,7 @@ textarea::placeholder .form-field {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
     background-repeat: no-repeat;
@@ -1157,7 +1156,7 @@ textarea::placeholder .form-field {
   }
 }
 
-@media (min-resolution: 2dppx) {
+@media screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
     background-repeat: no-repeat;
