@@ -1476,6 +1476,18 @@ textarea::placeholder .form-field {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-set.portfolio-set-padding {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-set.portfolio-set-padding {
+    padding-bottom: 20px;
+  }
+}
+
 .portfolio-title {
   margin: 0px 0px 2px 0px;
   font-weight: 700;

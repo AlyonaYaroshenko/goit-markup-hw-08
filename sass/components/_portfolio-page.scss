@@ -79,6 +79,16 @@
   box-sizing: border-box;
 }
 
+.portfolio-set.portfolio-set-padding {
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 56px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
+}
+
 // .portfolio-info {
 //   width: 450px;
 //   @media screen and (min-width: $tablet-width) {
